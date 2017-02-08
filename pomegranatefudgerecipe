@@ -4,18 +4,15 @@
     <meta name=viewport content='width=700'>
     <meta charset="utf-8">
     <style>
-      input, textarea {
-  max-width:100%
-}
-<head>
-h2
-li{margin 0 0 1em 0;
+img{
+  max-width: 100%
+    height: auto;
 }
 h3{line-height: .75em;}
 ul{line-height: 1.5em;}
 ol{line-height: 1.5em;}
 figcaption{color:#903;}
-    </style>
+   
       body{background-color: #ccc;}
       h1{
         font-family: monospace;
