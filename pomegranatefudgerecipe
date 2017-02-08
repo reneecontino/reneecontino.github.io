@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name=viewport content='width=700'>
+    <meta charset="utf-8">
+    <style>
+      input, textarea {
+  max-width:100%
+}
+<head>
+h2
+li{margin 0 0 1em 0;
+}
+h3{line-height: .75em;}
+ul{line-height: 1.5em;}
+ol{line-height: 1.5em;}
+figcaption{color:#903;}
+    </style>
+      body{background-color: #ccc;}
+      h1{
+        font-family: monospace;
+        font-family: "courier new";
+        color: #903;
+      /*grayscale: 0123456789abcdef*/
+      }
+      h2{
+        font-family: monospace;
+        font-family: "courier";
+        color: #903;
+      /*grayscale: 0123456789abcdef*/
+      }
+     
+      h3{
+        font-family: monospace;
+        font-family: "courier";
+        color: #787;
+      /*grayscale: 0123456789abcdef*/
+      }
+      ul{
+        font-family: sans-serif;
+        font-family: "trebuchet ms";
+        color: #006;
+      /*grayscale: 0123456789abcdef*/
+      }
+      ol{
+        font-family: sans-serif;
+        font-family: "trebuchet ms";
+        color: #006;
+      /*grayscale: 0123456789abcdef*/
+      }
+      ul{
+        padding: 1em 0 1em 2em; 
+      }
+ 
+      li{
+        margin: 0 0 .5em 0;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width">
+    <title>Salted Pomegranate Chocolate Fudge</title>
+    <meta name="author" content="Renee Contino"> 
+  
+  </head>
+  <body>
+    <h1>Salted <span class="bg-ko">Pomegranate</span> Chocolate Fudge</h1>
+    <h3>Prep Time: 5 minutes</h3>
+    <h3>Cook Time: 2 minutes</h3>
+    <h3>Total Time: 7 minutes</h3>
+    <figure>
+    <img src="http://tastykitchen.com/recipes/wp-content/uploads/sites/2/2015/12/Salted-Pomegranate-Chocolate-Fudge-5-410x273.jpg" alt="Salted Pomegranate Chocolate Fudge" max-width: 100%>
+      <figcaption><em>what a great treat!</em></figcaption>
+    </figure>
+    <section>
+      
+      <h3>Ingredients</h3>
+<hr />
+    <ul>
+      <li>4 cups (23 ounces): Milk Chocolate Chips</li>
+      <li>1¼ cups (14 ounces): Sweetened Condensed Milk</li>
+      <li>¼ cup Pomegranate Molasses</li>
+      <li>1 teaspoon Fleur de Sel / Sea Salt</li>
+      <li>Seeds of 1 Pomegranate</li>
+    </ul>
+      <h3>Steps</h3>
+      <hr />
+    <ol>
+      <li>Prepare a parchment paper-lined dish that is approximately 7 inches in diameter and at least 2 inches high.</li>
+      <li>In a large microwave-safe mixing bowl, add the milk chocolate chips and sweetened condensed milk.</li>
+      <li>Microwave for 1 minute. Stir. Microwave for another 30 seconds. Stir.</li>
+      <li>Mix in pomegranate molasses.</li>
+      <li>Mix in ½ teaspoon fleur de sel (Sea Salt).</li>
+      <li>Pour fudge into parchment-lined dish, and smooth it out with a spatula.</li>
+      <li>Add pomegranate seeds to the top of the fudge and use your hand to very gently pat them into the fudge so that they stick to the fudge as it cools.</li>
+      <li>Add another ½ teaspoon of fleur de sel (Sea Salt) right over the top of the fudge.</li>
+      <li>Place in fridge to set.The inside of fudge should be room temperature.</li>  
+    </ol>
+      <h2>Enjoy!</h2>
+    </section>
+  </body>
+</html>
