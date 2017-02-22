@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+
+  input, textarea {
+  max-width:100%
+}
+<head> 
+
+<style>
+  body,
+dd,
+dl,
+figure {
+  margin: 0;
+  }
+
+  figure{
+    margin-left: -1.25em;
+    margin-right: -1.25em;
+  }
+
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+body{
+      background-color: #fff;
+      width: 90%;
+      max-width: 60em;
+      margin: 0 auto;
+
+   }
+ /*  grayscale: 0123456789abcdef */
+
+
+
+
+
+h1{
+  margin-top: 2em;
+  margin-left: 1.85em;
+  margin-right: 2em;
+  font-family: "century Gothic", sans-serif;
+
+  color: #222;
+  font-weight:100;
+
+
+}
+
+h5{
+  margin-left: 4.75em;
+  margin-top: -1em;
+  margin-bottom: 7em;
+  text-transform: uppercase;
+  font-family: "century gothic", sans-serif;
+  color: #999;
+
+
+
+
+}
+
+section h5{
+
+  margin-left: 4.4em;
+  margin-top: -1em;
+  margin-bottom: -1em;
+  text-transform: uppercase;
+  font-family: "century gothic", sans-serif;
+  color: #999;
+
+
+}
+
+
+
+section ul{
+  margin-left: 1em;
+  margin-bottom: 2.5em;
+  list-style-type: none;
+  font-family:"century gothic", sans-serif;
+  color: #999;
+  font-size: 1em;
+  border-left: solid;
+  border-width: 1px;
+
+}
+
+
+
+
+
+
+
+
+
+h3{
+  margin-bottom: -1em;
+  margin-left: 5.15em;
+  margin-top: 5em;
+  font-family: "century gothic", sans-serif;
+  color: #444;
+
+
+}
+
+h4{
+  margin-left: 6em;
+  font-family: "century gothic", sans-serif;
+  color: #444;
+}
+
+#directions ol{
+ 
+  margin-left: 2em;
+  margin-right: 2em;
+  color: #999;
+  font-size: 1.1em;
+
+
+}
+
+h2
+li{margin 0 0 1em 0;
+}
+h3{line-height: .75em;}
+ul{line-height: 1.5em;}
+ol{line-height: 1.5em;}
+figcaption{color:#903;}
+
+HTML with Microdata
+<dl>
+  <dt><b>Prep Time:</b></dt>
+  <dd><time datetime="5m" itemprop="prepTime" content="PT5M">5 min</time></dd>
+  <dt><b>Cook Time:</b></dt>
+  <dd><time datetime="2m" itemprop="cookTime" content="PT2M">2 min</time></dd>
+</dl>
+Microdata, structured data, testing tool:
+https://search.google.com/structured-data/testing-tool
+HTML5 Outliner
+http://gsnedders.html5.org/outliner/
+*/
+
+/* --- display HTML5 elements as block --- */
+
+figcaption,
+figure,
+header,
+section {
+  display: block;
+  }
+
+/* --- resets (adjust default styles) --- */
+
+/* remove default margin */
+
+body,
+dd,
+dl,
+figure {
+  margin: 0;
+  }
+
+/* max-width and centered (horizontally) */
+
+body {
+  max-width: 60em;
+  background: #fff;
+  padding: 0 1em;
+  margin: auto;
+  }
+
+
+/* negative value, offset padding right/left value from body */
+
+.full-width {
+  margin-right: -1em;
+  margin-left: -1em;
+  }
+
+
+
+
+/* descendant selector */
+
+header h1 {
+  font: bold 3em "courier new", sans-serif;
+  margin-top: 0;
+  margin-bottom: .35em;
+  text-align: center;
+  }
+
+header dl {
+  display: inline-block; /* change box model display: display in a line (as text, left to right), but retain block properties (width/height) */
+  font: .96em "Arial", sans-serif;
+  letter-spacing: .01em;
+  vertical-align: top;
+  padding-top: .6em;
+  padding-bottom: .6em;
+  padding-left: 1.2em;
+  border-left: 1px solid #903;
+  margin-right: 1.5em;
+  margin-left: .4em;
+  }
+
+header dl dt {
+  margin: 1em 0 .5em;
+  }
+
+header dl dt:first-child {
+  margin-top: 0;
+  }
+
+/* --- navigation --- */
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1em;
+  }
+
+nav li {
+  display: inline;
+  }
+
+/* pseudo-class / :first-child / select only the first child (li) within the parent (ul) */
+
+nav li:first-child {
+  margin-right: 2em;
+  }
+
+nav a {
+  display: inline-block;
+  font: 1.2em "courier new", sans-serif;
+  color: #ddd;
+  text-decoration: none;
+  padding: .5em;
+  }
+
+nav a b {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: -3px;
+  }
+
+
+/* --- figure/img / product shot --- */
+
+/* id selector */
+
+
+#product img {
+  vertical-align: middle; /* remove descender spacing on image */
+  }
+
+#product figcaption {
+  padding: 1em 1em; /* offset right/left padding */
+  }
+
+#product figcaption small {
+  vertical-align: .1em;
+  }
+
+#product figcaption small {
+  font: 1.1em monospace;
+  }
+
+/* --- sections / ingredients/directions --- */
+
+section {
+  clear: left;
+  padding-top: 1.6em;
+  }
+
+
+section ol,
+section ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  }
+
+section li {
+  padding: 1em .5em;
+  border-top: 1px solid #ddd;
+  margin: 0 1.2em;
+  }
+
+#ingredients ul {
+  list-style: circle;
+  margin-left: 1.2em;
+  }
+
+#ingredients li {
+  font: normal 1.02em/1.45 Arial, serif;
+  margin: 0;
+  }
+
+
+#steps ol {
+  list-style: decimal inside;
+  }
+
+#steps li {
+  font: bold 1em "Arial", sans-serif;
+  margin: 0;
+  }
+
+#steps li p {
+  display: inline;
+  font: normal 1.02em/1.45 Arial, sans-serif;
+  margin:  0;
+  }
+
+/* --- back to top / jump-link-top --- */
+
+.jump-link-top {
+  text-align: center;
+  }
+
+.jump-link-top a {
+  display: block;
+  font: 1.1em sans-serif;
+  text-decoration: none;
+  padding: 1.2em;
+  color: #903;
+  }
+
+.jump-link-top .arrow-up {
+  font: bold 1.2em "Arial", sans-serif;
+  vertical-align: middle;
+  margin-right: .2em;
+  }
+
+
+      h1{
+        font-family: monospace;
+        font-family: "courier new";
+        color: #903;
+      /*grayscale: 0123456789abcdef*/
+      }
+      h2{
+        font-family: monospace;
+        font-family: "courier";
+        color: #903;
+      /*grayscale: 0123456789abcdef*/
+      }
+     
+      h3{
+        font-family: monospace;
+        font-family: "courier";
+        color: #787;
+      /*grayscale: 0123456789abcdef*/
+      }
+      ul{
+        font-family: sans-serif;
+        font-family: "trebuchet ms";
+        color: #006;
+      /*grayscale: 0123456789abcdef*/
+      }
+      ol{
+        font-family: sans-serif;
+        font-family: "trebuchet ms";
+        color: #006;
+      /*grayscale: 0123456789abcdef*/
+      }
+      ul{
+        padding: 1em 0 1em 2em; 
+      }
+ 
+      li{
+        margin: 0 0 .5em 0;
+      }
+    </style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  
+  <title>JS Bin</title>
+  <link rel="stylesheet" href="css/screen.css">
+  <link rel="canonical" <meta="" name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML &amp; CSS Recipe</title>
+  <meta name="author" content="Renee Contino" <="" head="">
+  
+
+  <body>
+    <header>
+
+<article>
+      <figure>
+        <img alt="Salted Pomegranate Chocolate Fudge" src="https://i.ytimg.com/vi/wCm9UT9DQ6Q/maxresdefault.jpg" itemprop="image">
+        
+        </figure>
+   <figcaption><em>What a great treat!</em></figcaption>
+    </article></header>
+
+
+
+<main>
+
+
+<nav>
+      <ul>
+        <li><a href="#ingredients"><b>Ingredients</b></a></li>
+        <li><a href="#steps"><b>Steps</b></a></li>
+      </ul>
+    </nav>
+
+
+
+<h1>Salted Pomegranate Chocolate Fudge</h1>
+
+      <dl></i></h1>
+    
+    <dl>
+      <dt><b>Prep Time:</b></dt>
+      <dd><time datetime="5m" itemprop="prepTime" content="PT5M">5 min</time></dd>
+    </dl>
+    
+    <dl>
+      <dt><b>Cook Time:</b></dt>
+      <dd><time datetime="2m" itemprop="cookTime" content="PT2M">2 min</time></dd>
+    </dl>
+
+    <dl>
+      <dt><b>Total Time:</b></dt>
+      <dd><time datetime="7m" itemprop="totalTime" content="PT7M">7 min</time></dd>
+    </dl>
+
+    <dl>
+      <dt><b>Level:</b></dt>
+      <dd><em>Easy</em></dd>
+    </dl>
+    
+
+  <section id="ingredients">
+      <h3>Ingredients</h3>
+      <ul itemprop="recipeIngredient">
+            <li>4 cups (23 ounces): Milk Chocolate Chips</li>
+            <li>1¼ cups (14 ounces): Sweetened Condensed Milk</li>
+            <li>¼ cup Pomegranate Molasses</li>
+            <li>1 teaspoon Fleur de Sel / Sea Salt</li>
+            <li>Seeds of 1 Pomegranate</li>
+          </ul>
+          </section>
+
+          <section id="directions">
+            <h3>Steps</h3>
+            <ol itemprop="recipeInstructions">
+            <li>Prepare a parchment paper-lined dish that is approximately 7 inches in diameter and at least 2 inches high.</li>
+            <li>In a large microwave-safe mixing bowl, add the milk chocolate chips and sweetened condensed milk.</li>
+            <li>Microwave for 1 minute. Stir. Microwave for another 30 seconds. Stir.</li>
+            <li>Mix in pomegranate molasses.</li>
+            <li>Mix in ½ teaspoon fleur de sel (Sea Salt).</li>
+            <li>Pour fudge into parchment-lined dish, and smooth it out with a spatula.</li>
+            <li>Add pomegranate seeds to the top of the fudge and use your hand to very gently pat them into the fudge so that they stick to the fudge as it cools.</li>
+            <li>Add another ½ teaspoon of fleur de sel (Sea Salt) right over the top of the fudge.</li>
+            <li>Place in fridge to set.The inside of fudge should be room temperature.</li>  
+          </ol>
+          </section>
+
+          <h2>Enjoy!</h2>
+          </section>
+
+          <div class="jump-link-top">
+            <a href="#" title="Back to Top"><span class="arrow-up">⇡</span> <span class="jump-link-text">Back to Top</span></a>
+          </div>
+  
+        </body>
+      </html>
